@@ -35,7 +35,7 @@
 ### 稳定版与实验版
 
 - **稳定版 `v1.0.6`**：默认推荐，只做逐卡版本回退。下载 [`CardTimeMachine-1.0.6.zip`](CardTimeMachine-1.0.6.zip)，对应的 Release 是 [`v1.0.6`](../../releases/tag/v1.0.6)。
-- **实验版 `v1.2.1`**：额外加入「卡池排除」，可以不让某些新卡进入奖励/商店/随机生成。下载 [`experimental/CardTimeMachine-1.2.1.zip`](experimental/CardTimeMachine-1.2.1.zip)。
+- **实验版 `v1.2.1`**：额外加入「卡池排除」，可以不让某些新卡进入奖励/商店/随机生成。下载 [`experimental/CardTimeMachine-1.2.1.zip`](experimental/CardTimeMachine-1.2.1.zip)，对应的预发布是 [`v1.2.1-experimental`](../../releases/tag/v1.2.1-experimental)。
 
 实验版是可选尝鲜，**不是默认版本**，也还没有做完整回归测试；如果你只需要把卡切回旧版，继续用稳定版 `1.0.6` 就好。两个包二选一安装，不要同时放进 `mods`。
 
@@ -190,7 +190,7 @@ Only versions in which a card **actually changed** are listed. If several versio
 ### Stable vs experimental
 
 - **Stable `v1.0.6`** — the default recommendation, card version rollback only. Download [`CardTimeMachine-1.0.6.zip`](CardTimeMachine-1.0.6.zip); the matching release is [`v1.0.6`](../../releases/tag/v1.0.6).
-- **Experimental `v1.2.1`** — adds card-pool exclusion, so selected new cards can be kept out of rewards, shops and random generation. Download [`experimental/CardTimeMachine-1.2.1.zip`](experimental/CardTimeMachine-1.2.1.zip).
+- **Experimental `v1.2.1`** — adds card-pool exclusion, so selected new cards can be kept out of rewards, shops and random generation. Download [`experimental/CardTimeMachine-1.2.1.zip`](experimental/CardTimeMachine-1.2.1.zip); the matching pre-release is [`v1.2.1-experimental`](../../releases/tag/v1.2.1-experimental).
 
 The experimental build is optional and has **not** had a full regression pass. If you only want old card versions, stay on stable `1.0.6`. Install one package or the other, not both.
 
