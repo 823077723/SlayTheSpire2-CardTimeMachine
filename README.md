@@ -73,7 +73,8 @@
 
 ### 安装
 
-1. 在 Steam 创意工坊订阅 **BaseLib**（https://steamcommunity.com/sharedfiles/filedetails/?id=3737335127），**CVC-跨版本兼容补丁**（https://steamcommunity.com/sharedfiles/filedetails/?id=3783150604）。
+1. 在 Steam 创意工坊订阅 - [BaseLib](https://steamcommunity.com/sharedfiles/filedetails/?id=3737335127) — 模组框架与配置界面，必需。
+- [CVC - 跨版本兼容补丁](https://steamcommunity.com/sharedfiles/filedetails/?id=3783150604) — 跨版本兼容，必需。
 2. 下载 [`CardTimeMachine-1.0.6.zip`](CardTimeMachine-1.0.6.zip)。
 3. 解压后把整个 `CardTimeMachine` 文件夹放进游戏的 `mods` 目录：
 
