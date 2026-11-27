@@ -235,6 +235,8 @@ No open-source license is granted for this repository. The packaged mod is provi
 
 <div align="center">
 
+<img src="docs/images/cover.jpg" width="320" alt="卡牌时光机 封面">
+
 **复活吧，我的爱卡。**
 
 `KILL THE NERF · BRING THEM BACK`
