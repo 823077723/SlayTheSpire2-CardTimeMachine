@@ -7,6 +7,7 @@
 **把被削的卡，切回你喜欢的那个版本。**
 
 [![Release](https://img.shields.io/badge/release-1.0.6-2ea44f)](../../releases)
+[![Experimental](https://img.shields.io/badge/experimental-1.2.1%20preview-orange)](experimental/CardTimeMachine-1.2.1.zip)
 [![Game](https://img.shields.io/badge/Slay%20the%20Spire%202-v0.114.0%20public--beta-1f6feb)](https://store.steampowered.com/app/2868840/)
 [![BaseLib](https://img.shields.io/badge/requires-BaseLib-8957e5)](https://steamcommunity.com/sharedfiles/filedetails/?id=3737335127)
 [![License](https://img.shields.io/badge/license-all%20rights%20reserved-lightgrey)](#授权--license)
@@ -30,6 +31,13 @@
 - 没被改过的卡不会出现在列表里，避免设置页变成一片无意义的版本号。
 
 一句话：安东尼削他的，你玩你的。
+
+### 稳定版与实验版
+
+- **稳定版 `v1.0.6`**：默认推荐，只做逐卡版本回退。下载 [`CardTimeMachine-1.0.6.zip`](CardTimeMachine-1.0.6.zip)，对应的 Release 是 [`v1.0.6`](../../releases/tag/v1.0.6)。
+- **实验版 `v1.2.1`**：额外加入「卡池排除」，可以不让某些新卡进入奖励/商店/随机生成。下载 [`experimental/CardTimeMachine-1.2.1.zip`](experimental/CardTimeMachine-1.2.1.zip)。
+
+实验版是可选尝鲜，**不是默认版本**，也还没有做完整回归测试；如果你只需要把卡切回旧版，继续用稳定版 `1.0.6` 就好。两个包二选一安装，不要同时放进 `mods`。
 
 ### 效果演示
 
@@ -57,8 +65,9 @@
 - **卡牌百科内预览**：不用改配置就能先看旧版长什么样；数值、费用、关键词、描述都会跟着切。
 - **逐卡选择**：每张卡独立记录，互不影响；切完立即生效。
 - **按职业分组**：设置页按铁甲战士、静默猎手、故障机器人、观者、死灵之缚、储君、愚者等职业分组。
-- **搜索**：卡名或 slug 搜索，55+ 张多版本卡里快速定位。
+- **搜索**：卡名或 slug 搜索，200+ 张多版本卡里快速定位。
 - **整套预设**：一键应用「正式版 0.111.1」「愚者首版 0.113.1」「压缩抽牌 0.107.1」等组合。
+- **卡池排除（仅实验版 v1.2.1）**：在百科详情页把任意卡标记为「已排除」，之后它不再出现在卡牌奖励、商店和随机生成里；已有卡组不会被改动。
 - **历代最强（自动）**：按费用、伤害、格挡、抽牌、能量、关键词等维度给每个版本打分，自动选一套；也可以把自己调好的组合另存为预设。
 - **不改存档结构**：只改运行时卡牌数据和描述；仍建议备份存档。
 
@@ -76,6 +85,8 @@
    ```
 
 4. 启动游戏。进入 **卡牌百科**，点开一张有旧版本的卡即可预览；设置页会出现「卡牌时光机」的配置入口。
+
+> 想试「卡池排除」？下载实验版 [`experimental/CardTimeMachine-1.2.1.zip`](experimental/CardTimeMachine-1.2.1.zip)，把里面的 `CardTimeMachine` 文件夹替换掉稳定版即可。实验版未完整回归，主页面仍以稳定版 `1.0.6` 为默认推荐。
 
 ### 使用
 
@@ -141,9 +152,10 @@
 
 ### 注意
 
-- 游戏版本：`v0.114.0`，`public-beta` 分支。正式版 `v0.111.1` 没有愚者，部分卡不存在。
+- 游戏版本：`v0.114.0`，`public-beta` 分支。正式版 `v0.111.1` 没有愚者，部分卡不存在；当前 DLL 也不能在 0.111.1 加载。
 - 依赖 **BaseLib**；没有 BaseLib 时设置页不会出现。
 - 本模组会修改卡牌数据和运行时行为，**不会主动改你的存档文件**；仍建议备份。
+- 实验版 `v1.2.1` 的卡池排除是「软禁用」：不删除卡、不改已有卡组，只影响后续奖励/商店/随机生成；少数事件/遗物硬编码仍可能给卡。开发者控制台 `card <ID>` 也仍能加。
 - 作者仍在读博，更新不一定及时；遇到问题请尽量带上日志和复现步骤。
 
 ### 更新日志
@@ -175,6 +187,13 @@ Instead of downgrading the whole game, it lets you roll back **individual cards*
 
 Only versions in which a card **actually changed** are listed. If several versions behave identically, they are folded into the newest one, so the list stays short and meaningful.
 
+### Stable vs experimental
+
+- **Stable `v1.0.6`** — the default recommendation, card version rollback only. Download [`CardTimeMachine-1.0.6.zip`](CardTimeMachine-1.0.6.zip); the matching release is [`v1.0.6`](../../releases/tag/v1.0.6).
+- **Experimental `v1.2.1`** — adds card-pool exclusion, so selected new cards can be kept out of rewards, shops and random generation. Download [`experimental/CardTimeMachine-1.2.1.zip`](experimental/CardTimeMachine-1.2.1.zip).
+
+The experimental build is optional and has **not** had a full regression pass. If you only want old card versions, stay on stable `1.0.6`. Install one package or the other, not both.
+
 ### Features
 
 - **Live preview in the card library** — open a card, use **↑ / ↓**, and see its cost, numbers, keywords and description change before applying.
@@ -182,6 +201,7 @@ Only versions in which a card **actually changed** are listed. If several versio
 - **Settings grouped by class** — Ironclad, Silent, Defect, Watcher, Necrobinder, Regent, Fool and others.
 - **Search, presets and “Strongest”** — apply a whole combination, save your own preset, or let the mod score every version and pick the strongest.
 - **Historical highlights** — the pre-July **Compact + Fuel draw** version (`Fuel` at `v0.107.1`), the first Fool build (`v0.113.1`), and many other nerfed cards.
+- **Card-pool exclusion (experimental v1.2.1 only)** — mark any card as excluded in its library detail view; it then stops appearing in card rewards, shops and random generation. Existing decks are untouched.
 - **No save-file rewriting** — card data and behaviour only; back up your saves anyway.
 
 ### Install
@@ -199,6 +219,8 @@ Only versions in which a card **actually changed** are listed. If several versio
 
 4. Launch the game. Open the **Card Library**, click a card, and use **↑ / ↓** on the large card view. The mod's settings page is under **Settings → Mods → Card Time Machine**.
 
+> Want card-pool exclusion? Download the experimental [`experimental/CardTimeMachine-1.2.1.zip`](experimental/CardTimeMachine-1.2.1.zip) and replace the `CardTimeMachine` folder. It has not had a full regression pass; stable `1.0.6` remains the default recommendation.
+
 ### Usage
 
 - **Single card:** Card Library → click a card → **↑ / ↓** → **Apply this version**.
@@ -214,9 +236,10 @@ Only versions in which a card **actually changed** are listed. If several versio
 
 ### Notes
 
-- Built for **Slay the Spire 2 v0.114.0** on the `public-beta` branch.
+- Built for **Slay the Spire 2 v0.114.0** on the `public-beta` branch. The current DLL cannot load on the v0.111.1 public branch (it lacks the Fool cards and several Power types).
 - Requires **BaseLib**.
 - **Multiplayer is untested.** Use at your own risk.
+- The experimental v1.2.1 card-pool exclusion is a **soft ban**: it does not delete cards or change existing decks, and only affects future rewards, shops and random generation. A few hard-coded events/relics and the dev console `card <ID>` can still create the card.
 - Very old versions (`v0.98.3` / `v0.99.1`) do not have complete localized descriptions in every language; the mod falls back to the closest available text while keeping the old numbers.
 - Other card-data/description mods may conflict.
 

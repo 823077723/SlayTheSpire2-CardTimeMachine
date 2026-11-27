@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.1 — experimental / 实验版
+
+- Added **card-pool exclusion**: any card can be marked **Excluded** in its card-library detail view and will stop appearing in future card rewards, shops and random generation.
+- Added preset bans: **Save preset** now stores both card versions and the exclusion list; applying that preset restores both.
+- Added the exclusion list and search UI to the settings page.
+- Fixed the oversized **Save preset** dialog that pushed its OK button off-screen.
+- This is an **experimental preview**. Stable remains **1.0.6**; the GitHub release for 1.2.1 is marked as a pre-release.
+
 ## 1.0.6
 
 - Fixed **Rocket Punch** version behaviour:
