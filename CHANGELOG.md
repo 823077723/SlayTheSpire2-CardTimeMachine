@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.2.8 — stable / 正式版
+
+- Fixed **Ki Verse** (`v0.113.1`) upgrade: upgrading now correctly gives **2 stacks** instead of 1. The manual version was not marked as custom, so the generic upgrade patch skipped `UpgradeValueBy(1)`.
+- Old-version coverage added for **Haze**, **Tracking**, **Synchronize**, **Eidolon** and **Ki Verse**:
+  - Haze `v0.107.1`: 3 cost, 4/6 Poison to all enemies, no Weak; removed the wrong Sly keyword.
+  - Tracking `v0.99.1`: first application gives 2 stacks (+100%), later applications give 1.
+  - Synchronize `v0.107.1`: 1 cost, Exhaust, 2 Focus per orb type; upgrade only removes Exhaust.
+  - Eidolon `v0.107.1`: exhaust your hand, gain 1 Intangible if at least 9 cards were exhausted.
+  - Ki Verse `v0.113.1`: Wah / Cho / Ki all count for the extra play.
+- Added the matching old descriptions for the five cards above.
+
+## 1.2.7
+
+- Merged the reported-card fixes for Haze, Tracking, Synchronize, Eidolon and Ki Verse; fixed a JSON encoding issue while updating the manifest.
+
 ## 1.2.6 — stable / 正式版
 
 - Fixed **Tune** (`v0.113.1`) status tooltip: it now describes the old “next cards cost 0” effect instead of the 0.114 “upgrade random cards” text.
