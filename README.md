@@ -6,7 +6,7 @@
 
 **把被削的卡，切回你喜欢的那个版本。**
 
-[![Release](https://img.shields.io/badge/release-1.2.6-2ea44f)](../../releases)
+[![Release](https://img.shields.io/badge/release-1.2.8-2ea44f)](../../releases)
 [![Requires](https://img.shields.io/badge/requires-BaseLib%20%2B%20CVC-8957e5)](#安装)
 [![Game](https://img.shields.io/badge/Slay%20the%20Spire%202-v0.114.0%20public--beta-1f6feb)](https://store.steampowered.com/app/2868840/)
 [![CVC](https://img.shields.io/badge/requires-CVC-8957e5)](https://steamcommunity.com/sharedfiles/filedetails/?id=3783150604)
@@ -34,7 +34,7 @@
 
 ### 当前版本
 
-- **稳定版 `v1.2.6`**：默认推荐，包含 8 版本逐卡回退、卡池排除、预设排除表，以及违逆/摧残等 13 张卡旧版升级数值修复；并修复调音旧版状态栏描述、调音打出 Ki 后卡牌停留不进弃牌堆的问题。下载 [`CardTimeMachine-1.2.6.zip`](CardTimeMachine-1.2.6.zip)，对应的 Release 是 [`v1.2.6`](../../releases/tag/v1.2.6)。
+- **稳定版 `v1.2.8`**：默认推荐，包含 8 版本逐卡回退、卡池排除、预设排除表、违逆/摧残等 13 张卡旧版升级数值修复，以及 1.2.8 的迷雾/跟踪/同步/幻景/叽诗句旧版本补全（叽诗句升级 2 层已修复）。下载 [`CardTimeMachine-1.2.8.zip`](CardTimeMachine-1.2.8.zip)，对应的 Release 是 [`v1.2.8`](../../releases/tag/v1.2.8)。
 - **旧稳定版 `v1.0.6`**：只做逐卡版本回退，保留归档，不再作为默认下载。
 
 两个包二选一安装，不要同时放进 `mods`。需要 **BaseLib** 和 **CVC - 跨版本兼容补丁** 两个前置，缺一不可。
@@ -74,7 +74,7 @@
 ### 安装
 
 1. 在 Steam 创意工坊订阅 **BaseLib**（物品 ID `3737335127`）和 **CVC - 跨版本兼容补丁**（物品 ID `3783150604`）。两个都要，缺一不可。
-2. 下载 [`CardTimeMachine-1.2.6.zip`](CardTimeMachine-1.2.6.zip)。
+2. 下载 [`CardTimeMachine-1.2.8.zip`](CardTimeMachine-1.2.8.zip)。
 3. 解压后把整个 `CardTimeMachine` 文件夹放进游戏的 `mods` 目录：
 
    ```text
@@ -189,7 +189,7 @@ Only versions in which a card **actually changed** are listed. If several versio
 
 ### Current release
 
-- **Stable `v1.2.6`** — the default recommendation: eight-version card rollback, card-pool exclusion, preset bans, the old-upgrade-value fixes for Defy, Debilitate and 11 other cards, plus the Tune tooltip fix and the “cards stay in play after Ki” fix. Download [`CardTimeMachine-1.2.6.zip`](CardTimeMachine-1.2.6.zip); the matching release is [`v1.2.6`](../../releases/tag/v1.2.6).
+- **Stable `v1.2.8`** — the default recommendation: eight-version card rollback, card-pool exclusion, preset bans, the old-upgrade-value fixes for Defy, Debilitate and 11 other cards, plus the 1.2.8 old-version coverage for Haze, Tracking, Synchronize, Eidolon and Ki Verse (including the Ki Verse upgrade fix). Download [`CardTimeMachine-1.2.8.zip`](CardTimeMachine-1.2.8.zip); the matching release is [`v1.2.8`](../../releases/tag/v1.2.8).
 - **Archived stable `v1.0.6`** — card rollback only. Kept for reference; not the default download.
 
 Install one package or the other, not both. Requires **BaseLib** and **CVC - Cross-Version Compatibility**; the mod will not load correctly without both.
@@ -207,7 +207,7 @@ Install one package or the other, not both. Requires **BaseLib** and **CVC - Cro
 ### Install
 
 1. Subscribe to **BaseLib** (`3737335127`) and **CVC - Cross-Version Compatibility** (`3783150604`) on the Steam Workshop. Both are required.
-2. Download [`CardTimeMachine-1.2.6.zip`](CardTimeMachine-1.2.6.zip).
+2. Download [`CardTimeMachine-1.2.8.zip`](CardTimeMachine-1.2.8.zip).
 3. Extract the `CardTimeMachine` folder into:
 
    ```text
